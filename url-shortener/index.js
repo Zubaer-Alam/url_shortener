@@ -6,11 +6,11 @@ const UrlMapping = require('./models/urlMapping');
 
 app.use(express.json({ extended: false }));
 
-const PORT = 5000;
+const PORT = 8000;
 
 // Connect to MongoDB
 mongoose
-  .connect('mongodb://localhost:1000/links', {
+  .connect('mongodb://mongodb:27017/links', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
