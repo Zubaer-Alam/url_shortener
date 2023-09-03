@@ -3,7 +3,9 @@ const app = express();
 const mongoose = require('mongoose');
 const shortid = require('short-id');
 const UrlMapping = require('./models/urlMapping');
+const cors = require('cors');
 
+app.use(cors())
 app.use(express.json({ extended: false }));
 
 const PORT = 8000;
