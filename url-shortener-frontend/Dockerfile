@@ -1,4 +1,3 @@
-
 FROM node:18-slim
 
 WORKDIR /app
@@ -9,7 +8,6 @@ RUN npm i
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 8080
 
-CMD npm start
-
+CMD npm start -- --host=0.0.0.0

@@ -1,10 +1,10 @@
 <script>
-  let longUrl = "";
-  let shortUrl = "";
+  let longUrl = '';
+  let shortUrl = '';
   let showShortUrl = false;
 
   async function shortenUrl() {
-    const response = await fetch("http://localhost:8000/shorten", {
+    const response = await fetch("http://backend:8000/shorten", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@
   {#if showShortUrl}
     <div>
       <p>Short URL: localhost:8000/{shortUrl}</p>
-      <a href={`http://localhost:8000/${shortUrl}`}>Go to Short URL</a>
+      <a href={`http://backend:8000/${shortUrl}`}>Go to Short URL</a>
     </div>
   {/if}
 </main>
