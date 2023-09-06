@@ -1,0 +1,27 @@
+main.svelte-8lmrr9 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+h1.svelte-8lmrr9 {
+  margin-bottom: 20px;
+}
+form.svelte-8lmrr9 {
+  margin-bottom: 20px;
+}
+input.svelte-8lmrr9 {
+  padding: 10px;
+}
+button.svelte-8lmrr9 {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+a.svelte-8lmrr9 {
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
