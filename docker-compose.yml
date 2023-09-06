@@ -3,7 +3,7 @@ services:
   
   backend:
     build:
-      context: url-shortener-backend
+      context: backend
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
@@ -15,9 +15,9 @@ services:
     ports:
       - "27017:27017"
     
-  frontend:
+  interface:
     build: 
-      context: url-shortener-frontend
+      context: interface
       dockerfile: Dockerfile
     ports:
       - "8080:8080"

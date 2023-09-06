@@ -53,11 +53,13 @@
 
   input {
     padding: 10px;
+    border-radius: 5px !important;
   }
 
   button {
     padding: 10px;
     background-color: #007bff;
+    border-radius: 5px !important;
     color: white;
     border: none;
     cursor: pointer;
