@@ -17,7 +17,7 @@
       shortUrl = data.shortKey;
       showShortUrl = true;
     } else {
-      console.error("Error:", response.status);
+      console.error(`Error : ${response.status}`);
     }
   }
 </script>
