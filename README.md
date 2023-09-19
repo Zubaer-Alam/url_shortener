@@ -20,7 +20,7 @@ Steps:
          
           docker compose up -d
           
-   5. Open your browser and access http://localhost:8000 to view the app.
+   5. Open your browser and access http://localhost:8080 to view the app.
    6. After you have finished viewing the app, stop the container:
 
           docker compose down
