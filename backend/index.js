@@ -50,14 +50,13 @@ app.get("/:shortKey", async (req, res) => {
 
   try {
     const urlMapping = await UrlMapping.findOne({ shortKey });
+
     if (urlMapping) {
-      // Redirect to the original URL
-      console.log(urlMapping.originalUrl);
       res.redirect(urlMapping.originalUrl);
     } else {
-      // Handle when the short key is not found
       res.status(404).send("Short key not found");
     }
+
   } catch (error) {
     console.error(error);
     res.status(500).send("Server Error");
