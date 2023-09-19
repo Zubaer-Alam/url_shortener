@@ -23,18 +23,16 @@ mongoose
     console.error("MongoDB connection error:", err);
   });
 
-// Route to handle URL mapping creation
+  // POST
 app.post('/shorten', async (req, res) => {
   const { longUrl } = req.body;
   const shortKey = shortid.generate();
 
-  // Ensure the original URL includes the protocol
   const originalUrl = longUrl.startsWith('http') ? longUrl : `http://${longUrl}`;
 
-  // Create a new URL mapping document
   const newUrlMapping = new UrlMapping({
     shortKey: shortKey,
-    originalUrl: originalUrl, // Save the complete URL
+    originalUrl: originalUrl,
   });
 
   try {
@@ -46,7 +44,7 @@ app.post('/shorten', async (req, res) => {
   }
 });
 
-// Route to get the mapped long key
+// GET
 app.get("/:shortKey", async (req, res) => {
   const { shortKey } = req.params;
 
